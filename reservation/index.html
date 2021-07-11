@@ -1,0 +1,106 @@
+<!DOCTYPE html lang="zh-tw">
+<html>
+
+<head>
+    <title>遊戲預先登錄</title>
+    <meta charset="utf-8">
+    <meta name="author" content="於是寫下社群工作室">
+    <meta name="copyright" content="本網頁為於是寫下社群工作室所有，僅供課程練習用，非經允許不得用於它途">
+    <meta name="robots" content="none">
+    <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8">
+    <meta http-equiv="Content-Language" content="zh-TW">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel=icon href=./favicon.ico type="image/png">
+    <link href="./style.css" rel="stylesheet">
+    <!-- Google Tag Manager 代碼放置處 -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PQDL5PP');</script>
+    <!-- End Google Tag Manager 代碼放置處 -->
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) 代碼放置處  -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQDL5PP" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) 代碼放置處  -->
+    <section id="hero">
+        <div class="hero">
+            <div class="logo-container">
+                <img src="./src/images/logo.png" alt="logo" class="logo">
+            </div>
+            <div class="btn-container">
+                <a href="#reservation"><img src="./src/images/btn1.png" alt="bnt1" class="btn btn1"></a>
+            </div>
+        </div>
+    </section>
+    <section id="chapter">
+        <h2 class="title">三大角色技能搶先看</h2>
+        <div class="chapters">
+            <div class="chp">
+                <div class="chp-bg chp-bg1" style="background-image:url(./src/images/ch01.png)"></div>
+            </div>
+            <div class="chp">
+                <div class="chp-bg chp-bg2" style="background-image:url(./src/images/ch02.png)"></div>
+            </div>
+            <div class="chp">
+                <div class="chp-bg chp-bg3" style="background-image:url(./src/images/ch03.png)"></div>
+            </div>
+        </div>
+    </section>
+    <section id="promo">
+        <h2 class="title">精彩遊戲畫面</h2>
+        <div class="video">
+            <div class='embed-container'><iframe src='https://www.youtube.com/embed/du9CjCD33Bg' frameborder='0'
+                    allowfullscreen></iframe></div>
+        </div>
+    </section>
+    <section id="reservation">
+        <h2 class="title">立即事前預約<span>領 S 級水晶</span></h2>
+        <div class="form">
+            <form action="submit">
+                <legend>選擇預約平台</legend>
+                <label for="googleplay">
+                    <input type="radio" name="plat" value="googleplay" required id="googleplay">
+
+                    <img src="./src/images/googleplay.png" alt="googleplay">
+                </label>
+                <label for="appstore">
+                    <input type="radio" name="plat" value="appstore" required id="appstore">
+                    <img src="./src/images/appstore.png" alt="appstore">
+                </label>
+                <legend>輸入手機號碼</legend>
+                <input type="text" name="phone" placeholder="格式：0912345678" required>
+                <div class="form-btn">
+                    <button type="submit">
+                        <img src="./src/images/btn2.png" alt="">
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section id="event">
+        <h2 class="title">參加 Facebook 活動<span>再抽好禮</span></h2>
+        <div class="info-container">
+            <p class="info">立即前往 Facebook 按讚加入粉絲團並於活動貼文下方留言處 Tag 兩位好友
+                <br>就有機會抽中「myCard 點數」、「全聯禮券」等多項好禮喔！
+            </p>
+            <img src="./src/images/gift.png" alt="" class="gift">
+            <div class="event-btn">
+                <a href="#">
+                    <img src="./src/images/btn3.png" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,257 @@
+*{
+    /* border:1px solid black; */
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+    font-family: 'Noto Serif TC', serif;
+}
+
+body{
+    background:url(/reservation/src/images/bg.jpg);
+    background-size:cover;
+    height:100vh;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    background-position: center;
+}
+
+section{
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+section#hero .hero{
+    width:100%;
+    margin:0 auto;
+}
+
+.logo-container{
+    position: relative;
+    width:100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+img.logo{
+    position: absolute;
+    width:100%;
+    max-width: 800px;
+    animation-name: logo;
+    animation-duration:3s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes logo{
+    0%{
+        top:0;
+    }
+    50%{
+        top:10px;
+    }
+    100%{
+        top:0;
+    }
+}
+
+.btn-container{
+    width:100%;
+    display:flex;
+    justify-content:center; 
+}
+
+section#hero a{
+    margin: 20% auto 0;
+}
+
+a img.btn{
+    width: 200px;
+}
+
+h2.title{
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em;
+    color:#FFD751;
+    text-shadow: 0px 0px 8px rgb(0, 0,0);
+}
+
+h2.title span{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.chapters{
+    width: 100%;
+    display:flex;
+    justify-content:center; 
+}
+
+@media screen and (max-width: 900px){
+    .chapters{
+        overflow-X: scroll;
+        justify-content:start;
+    }
+}
+
+.chp{
+    position: relative;
+    width: 25%;
+    height: 80%;
+    min-width: 300px;
+}
+
+.chp-bg{
+    position: relative;
+    width:100%;
+    height: 0;
+    padding-bottom: 140%;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:center;
+    cursor: pointer;
+}
+
+.chp-bg:after{
+
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    text-align: center;
+    border-radius:10px;
+    animation-name: chp;
+    overflow: hidden;
+    display:flex;
+    justify-content:center; 
+    align-items: center;
+    color: white;
+}
+
+.chp-bg:hover:after{
+    background-color: rgba(0, 0,0,0.6);
+    width:98.5%;
+    height: 98%;
+    font-size: 1.5em;
+}
+
+.chp-bg1:hover:after{
+    content: "以火之名，創造大地之生命";
+}
+
+.chp-bg2:hover:after{
+    content: "以光之名，照耀世間萬物生命";
+}
+
+.chp-bg3:hover:after{
+    content: "以水之名，灌溉孕育生命";
+}
+
+form{
+    background-color: rgba(0,0,0,0.6);
+    padding: 20px;
+    border-radius: 10px;
+    height:60%;
+    display:flex;
+    justify-content:center; 
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+legend{
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 1.5em;
+}
+
+input[name=phone]{
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+}
+
+form label{
+    display:flex;
+    justify-content:center; 
+    align-items: center;
+    }
+
+.form-btn{
+    width: 100%;
+    display:flex;
+    justify-content:center; 
+}
+
+.form-btn button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.form-btn button img{
+    width: 200px;
+}
+
+.info-container{
+    background-color: rgba(0,0,0,0.6);
+    padding: 30px;
+    border-radius: 10px;
+    display:flex;
+    justify-content:center; 
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 800px;
+}
+
+.info{
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.info-container img.gift{
+    width: 60%;
+    margin-bottom: 50px;
+}
+
+.event-btn{
+    width: 100%;
+    display:flex;
+    justify-content:center;
+}
+
+.event-btn a img{
+    width: 150px;
+}
+
+.video{
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    width: 100%;
+} 
+    
+.embed-container iframe, .embed-container object, .embed-container embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
